@@ -56,8 +56,80 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- menu mobile -->
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button type="button" class="btn-closed" data-menu-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="menu-nav-list">
+            <li>
+              <a class="nav-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li><a class="nav-menu-link" href="">Portfolio</a></li>
+            <li><a class="nav-menu-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <ul class="address-menu-container">
+            <li>
+              <a class="menu-tel-mail" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="menu-tel-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <ul class="social-menu-list">
+          <li class="social-icon-list">
+            <a href="" class="social-menu-link">
+              <svg class="social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icon-list">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icon-list">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icon-list">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!--closed Bloc header -->
     <main>
       <!--bloc Hero-->
@@ -127,11 +199,16 @@
       <!--Closed bloc team skills-->
       <!--Bloc Team-->
       <section class="bloc-team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="title-team">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/img.jpg" alt="Mark_Guerrero" width="264" />
+              <img
+                srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
+                src="./images/img.jpg"
+                alt="Mark_Guerrero"
+                width="264"
+              />
               <div class="card">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -169,7 +246,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img(1).jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/img(1).jpg 1x, ./images/img(1)@2x.jpg 2x"
+                src="./images/img(1).jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="card">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -206,7 +288,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img(2).jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/img(2).jpg 1x, ./images/img(2)@2x.jpg 2x"
+                src="./images/img(2).jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="card">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -243,7 +330,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img(3).jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/img(3).jpg 1x, ./images/img(3)@2x.jpg 2x"
+                src="./images/img(3).jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="card">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -297,7 +389,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card">
+              <div class="card-app">
                 <h3 class="portfolio-t">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
@@ -311,7 +403,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card">
+              <div class="card-app">
                 <h3 class="portfolio-t">Cashless Payment</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -325,7 +417,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card">
+              <div class="card-app">
                 <h3 class="portfolio-t">Meditation App</h3>
                 <p class="portfolio-text">App</p>
               </div>
@@ -339,7 +431,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card">
+              <div class="card-app">
                 <h3 class="portfolio-t">Taxi Service</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -353,7 +445,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card">
+              <div class="card-app">
                 <h3 class="portfolio-t">Screen Illustrations</h3>
                 <p class="portfolio-text">Design</p>
               </div>
@@ -367,7 +459,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="card">
+              <div class="card-app">
                 <h3 class="portfolio-t">Online Courses</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -378,7 +470,7 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container container">
         <div class="bloc">
           <a class="logo" href="./index.html"
             >Web<span class="stud-logo">Studio</span></a
@@ -389,7 +481,7 @@
           </p>
         </div>
         <div class="footer-soc">
-          <p class="footer-soc-txt">Social media</p>
+          <p class="sub-text">Social media</p>
           <ul class="icon-list-footer">
             <li class="icon-it-footer">
               <a href="" class="icon-lin-footer">
@@ -445,9 +537,9 @@
     </footer>
     <!--Closed footer-->
     <!-- Modal -->
-    <div class="modal is-open">
+    <div class="modal" data-modal>
       <div class="modal-overlay">
-        <button type="button" class="btn-closed btn-clos">
+        <button type="button" class="btn-closed btn-clos" data-modal-close>
           <svg class="mod-btn-clos" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -501,7 +593,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-box com-box">
+          <div class="com-box">
             <label for="user-comment" class="form-label">Comment</label>
             <textarea
               class="comment-input"
@@ -525,13 +617,17 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
+              <span class="pr-span"></span>
               I accept the terms and conditions of the
               <a class="privacy-p" href="">Privacy Policy</a>
+            </span>
             </label>
           </div>
           <button class="btn-m" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/menu.js" src="./"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
