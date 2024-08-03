@@ -338,8 +338,8 @@ flex-direction: row;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .menu-tel-mail:hover,
- .menu-tel-mail:focus {
+ .address-link:hover,
+ .address-link:focus {
      color: #4d5ae5;
  }
 
@@ -349,7 +349,7 @@ flex-direction: row;
      margin-bottom: 48px;
  }
 
- .social-menu-list {
+ .icons-list-m {
      display: flex;
      gap: 40px;
  }
@@ -366,8 +366,8 @@ flex-direction: row;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .social-menu-link:hover,
- .social-menu-link:focus {
+ .nav-menu-link:hover,
+ .nav-menu-link:focus {
      background-color: #404bbf;
  }
 
